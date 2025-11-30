@@ -2,6 +2,10 @@ name: Add Todo
 
 on: push
 
+permissions:
+  id-token: write
+  contents: read
+
 env:
   client_id: "7b20495a-a14c-4ef2-bd11-222bf2538418"
   tenant_id: "af734fcf-6a49-4af5-8ec9-51df7466b2c5"
