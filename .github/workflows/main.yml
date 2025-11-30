@@ -18,6 +18,8 @@ jobs:
   my_first_job:
     name: Build and Push Images
     runs-on: anjali
+    environment: Add Todo
+
     steps:
     
     - name: Checkout
