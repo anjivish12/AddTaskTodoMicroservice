@@ -43,10 +43,10 @@ jobs:
       run: docker build -t addtodo:v1 .
 
     - name: Tag Image
-      run: docker tag addtodo:v1 anjaliacr/addtodo:v1
+      run: docker tag addtodo:v1 anjaliacr.azurecr.io/addtodo:v1
 
     - name: Push Images to ACR
-      run: docker push anjaliacr/addtodo:v1 
+      run: docker push anjaliacr.azurecr.io/addtodo:v1 
 
     
    
