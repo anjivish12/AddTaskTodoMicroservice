@@ -40,13 +40,13 @@ jobs:
       uses: docker/setup-buildx-action@v3
 
     - name: Build Docker Image
-      run: docker build -t addTodo:v1 .
+      run: docker build -t addtodo:v1 .
 
     - name: Tag Image
-      run: docker tag addTodo:v1 anjaliacr/addTodo:v1
+      run: docker tag addtodo:v1 anjaliacr/addtodo:v1
 
-    - name: Puh Images to ACR
-      run: docker push anjaliacr/addTodo:v1 
+    - name: Push Images to ACR
+      run: docker push anjaliacr/addtodo:v1 
 
     
    
