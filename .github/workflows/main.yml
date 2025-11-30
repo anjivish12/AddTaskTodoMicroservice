@@ -22,9 +22,9 @@ jobs:
     - name: Azure Login
       uses: Azure/login@v2.3.0
       with:
-        client-id: ${{ secrets.CLIENT_ID }}
-        tenant-id: ${{ secrets.TENANT_ID }}
-        subscription-id: ${{ secrets.SUBSCRIPTION_ID }}
+        client-id: ${{ vars.CLIENT_ID }}
+        tenant-id: ${{ vars.TENANT_ID }}
+        subscription-id: ${{ vars.SUBSCRIPTION_ID }}
         
     - name: Login to ACR
       uses: docker/login-action@v3
