@@ -2,23 +2,20 @@ name: Add Todo
 
 on: push
 
+permissions:
+  id-token: write
+  contents: read
+
 env:
   IMG_NAME: "addtodoui"
   IMG_SERVER: "anjaliacr.azurecr.io"
   ACR_USERNAME: "anjaliacr"
   ACR_PASSWORD: "MaWemeaUNFPIFcd5RbUjf+gjp2bph0uffjsIFWB0BN+ACRC84zOf"
 
-
-permissions:
-  id-token: write
-  contents: read
-
 jobs:
   my_first_job:
     name: Build and Push Images
     runs-on: anjali
-    environment: Add Todo
-
     steps:
     
     - name: Checkout
