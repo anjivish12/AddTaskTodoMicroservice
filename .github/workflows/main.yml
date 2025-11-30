@@ -8,6 +8,8 @@ env:
   CLIENT_ID: "7b20495a-a14c-4ef2-bd11-222bf2538418"
   TENANT_ID: "af734fcf-6a49-4af5-8ec9-51df7466b2c5"
   SUBSCRIPTION_ID: "95a90f4b-7e15-47ba-95ab-0d52bac078e4"
+  ACR_USERNAME: "anjaliacr"
+  ACR_PASSWORD: "MaWemeaUNFPIFcd5RbUjf+gjp2bph0uffjsIFWB0BN+ACRC84zOf"
 
 
 permissions:
