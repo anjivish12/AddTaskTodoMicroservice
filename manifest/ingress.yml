@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: addtodo-ingress
+
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: add-todo-api.dhoomdhoom.shop
+    http: 
+      paths:  
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: addtodo
+            port:
+              number: 80
+
