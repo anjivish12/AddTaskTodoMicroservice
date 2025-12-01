@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment 
+metadata:
+  name: addtodo
+spec:
+  replicas: 2 
+  selector:
+    matchLabels:
+      app: addtodo
+
+  template: 
+    metadata:
+      labels:
+        app: addtodo
+    spec:
+      containers:
+      - name: con 
+        image: anjaliacr.azurecr.io/addtodo:v1
+        ports:
+        - containerPort: 8000    
+        env:
+        - name: CONNECTION_STRING
+          value: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:anjaliserver.database.windows.net,1433;Database=anjalidb;Uid=server;Pwd=#Elemental@123;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"

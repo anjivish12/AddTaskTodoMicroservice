@@ -1,0 +1,12 @@
+apiVersion: v1 
+kind: Service 
+metadata:
+  name: addtodo
+spec:
+  type: ClusterIP
+  selector:
+    app: addtodo
+
+  ports:
+  - port: 80
+    targetPort: 8000
